@@ -1,0 +1,258 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  /* background-color: #fdfdfd; */
+  color: #222;
+}
+
+/* Navbar Styling */
+.navbar {
+  /* background-color: #a89b9b; */
+  background-color:#f5f5f5;
+  padding: 20px 0;
+  padding-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  
+}
+
+.navbar__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__brand {
+  font-size: 32px;
+  font-weight: 700;
+   font-family: 'Englebert', sans-serif;
+  
+  letter-spacing: 1px;
+  position: relative;
+  right: 10vh;
+  
+  /* background-color: aquamarine; */
+  
+}
+
+.navbar__links a {
+  margin-left: 30px;
+  text-decoration: none;
+  /* color: #dddddd; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+
+color: #384351;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar__links a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #150d05;
+  transition: width 0.3s ease;
+}
+
+.navbar__links a:hover {
+  color: #000300;
+}
+
+.navbar__links a:hover::after {
+  width: 100%;
+}
+
+
+
+/* main */
+
+
+.main{
+  width: 83%;
+  padding-left: 10px;
+  padding-bottom: 11;
+}
+.heading{
+  /* width: 30vh%; */
+ padding: 09vh 25vh;
+font-size:6vh ;
+}
+
+.img1{
+  /* width: 83%; */
+padding-left: 28vh;
+
+margin-top: 7vh;
+/* margin-bottom: 10vh; */
+
+}
+.para1{
+  /* background-color: #efc2c2; */
+  width: 75%;
+  padding-left: 28vh;
+   color: rgb(113, 107, 107);
+    font-size: 1.2rem;
+    font: bolder;
+    padding-bottom: vh;
+    /* background-color: #222; */
+}
+.para2{
+  width: 82%;
+   padding-left: 28vh;
+   color: rgb(113, 107, 107);
+    font-size: 1.2rem;
+    font: bolder;
+    padding-top: 7vh;
+    
+}
+
+
+
+/* * fooooooter */ */
+
+#footer{
+    /* width: 100%; */
+  /* padding: 40px 20px; */
+  background-color:#c61717;
+  position: relative;
+  top: 1.1vh;
+  
+  
+}
+.footer-top{
+    width: 100%;
+    /* margin: 110px; */
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+    margin-top: 15vh;
+    /* background-color: #222; */
+}
+
+.logo {
+  font-size: 32px;
+  padding-left: 81.5vh;
+  position: relative;
+  top: 15vh;
+  font-weight: bold;
+ 
+   font-family: 'Englebert', sans-serif;
+ 
+
+
+
+  
+}
+
+/* .social-icons {
+  margin-top: 10px;
+  color: rgb(255, 136, 0);
+} */
+.social-icons{
+  display: flex;           
+  align-items: center;  
+     
+  gap: 15px;              
+  margin-top: 29px;        
+  margin-left: 83vh;
+  position: relative;
+  top: 10vh;
+
+}
+
+.icon{
+    
+  width: 30px;
+  height: 62px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  /* background-color: red; */}
+
+
+.icon1{
+  
+  background-image: url('./icons/insta.svg');
+}
+
+ 
+  .icon2{
+    background-image: url('./icons/twit.svg');
+  }
+  .icon3{
+    background-image: url('./icons/dev.svg');
+  }
+  .icon4{
+    background-image: url('./icons/f.svg');
+    height: 33px;
+  }
+  .icon5{
+    background-image: url('./icons/in.svg');
+
+  }
+
+
+  /* .footer-links{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 28vh;
+    
+
+    color: black;
+    
+
+
+  } */
+   .footer-links,
+.footer-links-small,
+.copyright {
+  text-align: center;
+  margin: 10px auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #5f6368;
+}
+
+.footer-links a,
+.footer-links-small a,
+.copyright a {
+  color: #384351;
+  text-decoration: none;
+  margin: 0 0px;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover,
+.footer-links-small a:hover,
+.copyright a:hover {
+  color: #174ea6;
+  text-decoration: underline;
+}
+
+.footer-links,
+.footer-links-small {
+  margin-bottom: 8px;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #e6c2c2;
+}
