@@ -81,10 +81,89 @@
 .image1 {
   flex: 1;
   max-width: 400px;
-  height: auto;
+  height: 290px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   
+}
+.para2{
+  max-width: 1200px;
+   /* flex: 2; */
+  font-size: 2.5vh;
+  /* line-height: 1.2; */
+  color: #333;
+  /* background-color: aqua; */
+  border-radius: 12px;
+  padding-left: 28vh;
+  margin-top: 3vh;
+
+}
+.mid_head{
+  font-size: 22px;
+  font-weight: 600;
+  margin: 40px 0 16px;
+  color: #2c2c2c;
+  border-left: 4px solid #999999;
+  padding-left: 10px;
+  font-family: sans-serif;
+}
+
+
+.card_grid{
+  display: grid;
+  
+ grid-template-columns: repeat(2, 1fr); /* 2 columns */
+ gap: 0px; /* space between cards */
+/* margin-top: 25px; */
+padding: 10vh 20vh;
+/* background-color: #333; */
+}
+
+.card{}
+ 
+
+
+
+.card:hover{
+   transform: scale(1.02);
+}
+
+
+/* button */
+ 
+
+.request_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.request_button a {
+  text-decoration: none;
+}
+
+.request_button button {
+  background-color: #333333; /* blue-600 */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.request_button button:hover {
+  background-color: #555555; /* blue-700 */
+  transform: translateY(-2px);
+}
+
+.request_button button:focus {
+  outline: 2px solid #999999; /* blue-300 */
+  outline-offset: 3px;
 }
 
 
