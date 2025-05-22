@@ -119,7 +119,7 @@ padding: 10vh 20vh;
 /* background-color: #333; */
 }
 
-.card{}
+/* .card{} */
  
 
 
@@ -164,6 +164,125 @@ padding: 10vh 20vh;
 .request_button button:focus {
   outline: 2px solid #999999; /* blue-300 */
   outline-offset: 3px;
+}
+
+
+
+/* foooteer */
+
+#footer {
+    /* width: 100%; */
+  /* padding: 40px 20px; */
+  background-color:#f5f5f5;
+  position: relative;
+  top: 1.1vh;
+  
+  
+}
+.footer-top{
+    width: 100%;
+    /* margin: 110px; */
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+    margin-top: 15vh;
+}
+
+.logo {
+  font-size: 32px;
+  padding-left: 75vh;
+  position: relative;
+  top: 15vh;
+  /* font-weight: bold; */
+  font-family: "Arial Black", sans-serif;
+ 
+
+
+
+  /* margin-bottom: 20px; */
+  color: rgb(23, 15, 15);
+}
+
+
+.social-icons{
+  display: flex;           
+  align-items: center;  
+     
+  gap: 15px;              
+  margin-top: 29px;        
+  margin-left: 83vh;
+  position: relative;
+  top: 10vh;
+
+}
+
+.icon{
+    
+  width: 30px;
+  height: 62px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  /* background-color: red; */}
+
+
+.icon1{
+  
+  background-image: url('./icons/insta.svg');
+}
+
+ 
+  .icon2{
+    background-image: url('./icons/twit.svg');
+  }
+  .icon3{
+    background-image: url('./icons/dev.svg');
+  }
+  .icon4{
+    background-image: url('./icons/f.svg');
+    height: 33px;
+  }
+  .icon5{
+    background-image: url('./icons/in.svg');
+
+  }
+
+
+  
+   .footer-links,
+.footer-links-small,
+.copyright {
+  text-align: center;
+  margin: 10px auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #5f6368;
+}
+
+.footer-links a,
+.footer-links-small a,
+.copyright a {
+  color: #384351;
+  text-decoration: none;
+  margin: 0 0px;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover,
+.footer-links-small a:hover,
+.copyright a:hover {
+  color: #174ea6;
+  text-decoration: underline;
+}
+
+.footer-links,
+.footer-links-small {
+  margin-bottom: 8px;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #e6c2c2;
 }
 
 

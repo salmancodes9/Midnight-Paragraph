@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Request Form</title>
+  <link rel="stylesheet" href="req1form.css" />
+</head>
+<body>
+  <form class="form-container" id="requestForm">
+    <h2>Request a Post</h2>
+
+    <label for="title">Title of Requested Post</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="reason">Why You Need the Post</label>
+    <textarea id="reason" name="reason" rows="4" required></textarea>
+
+    <label for="date">Desired Publication Date</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Desired Publication Time</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="quantity">Number of Posts</label>
+    <select id="quantity" name="quantity" required>
+      <option value="" disabled selected>Select number</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label>Audience</label>
+    <div class="audience-options">
+      <label><input type="radio" name="audience" value="Kids" required> Kids</label>
+      <label><input type="radio" name="audience" value="Adults"> Adults</label>
+      <label><input type="radio" name="audience" value="Aged"> Aged</label>
+    </div>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</body>
+</html>
