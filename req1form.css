@@ -17,7 +17,7 @@ body {
   width: 100%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid #e3e6ea;
-  
+
 }
 
 .form-container h2 {
@@ -26,7 +26,7 @@ body {
   color: #2c3e50;
   font-size: 26px;
   font-weight: 600;
-  
+
 }
 
 label {
@@ -34,10 +34,12 @@ label {
   margin: 16px 0 6px;
   font-weight: 600;
   color: #2c3e50;
-  
+
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   width: 100%;
   padding: 12px;
   font-size: 15px;
@@ -45,10 +47,12 @@ input, textarea, select {
   border-radius: 6px;
   box-sizing: border-box;
   transition: border-color 0.3s, box-shadow 0.3s;
-  
+
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   border-color: #1a73e8;
   outline: none;
   box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.15);
@@ -84,5 +88,3 @@ button {
 button:hover {
   background-color: #155ab6;
 }
-
-
