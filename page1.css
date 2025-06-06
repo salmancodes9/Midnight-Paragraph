@@ -153,6 +153,8 @@ top: 5vh;
     font: bolder;
     padding-top: 7vh;
 }
+
+/* footer */
 .footer {
     /* width: 100%; */
   /* padding: 40px 20px; */
@@ -302,7 +304,7 @@ top: 5vh;
   height: 2cm;
   border-radius: 50%;
   object-fit: cover;
-  /* margin-bottom: rem; */
+ 
 }
 
 .author-name {
@@ -322,26 +324,82 @@ top: 5vh;
 /* media queries */
 
 
-@media (max-width: 640px) {
-   /* .navbar{
-    background-color: black;
-  }  */
-   .navbar__container{
-    background-color: blue;
-     /* flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    width: 100%; */
-  }  
+@media (max-width: 640px) and (min-width: 480px) {
+   .navbar{
+    /* background-color: black; */
+  } 
+  
   .navbar__brand{
     /* background-color: red; */
     margin-left: 3rem;
   }
-
- 
+  .author-box{
+    margin-left:auto ;
+    margin-right: 1rem;
+  }
+  .main > .heading{
+    /* background-color: aquamarine; */
+    padding: 0 0rem;
+    margin-top: 4rem;
+  }
+ .main > .img1{
+    padding-left: 0rem;
+    position: relative;
+    bottom: 0vh;
+  }
+  .main > .para1,
+  .main > .para2,
+  .main > .para3,
+  .main > .para4,
+  .main > .para5{
+    padding-left: 0rem;
+    width: 100%;
+    font-size: 1.1rem;
+    padding-top: 2vh;
+  }
+  
+  .img2{
+    padding-left: 0rem;
+    position: relative;
+    top: 0vh;
+  }
 
 }
 @media (max-width: 480px) {
+   .navbar__brand{
+    background-color: red;
+    margin-left: 5rem;
+    font:small;
+  }
+  .author-box{
+    margin-left:auto ;
+    margin-right: 1rem;
+     margin-top:auto ;
+    margin-bottom: 1rem;
+  
+  }
+  .author-box > .author-pic{
+    width: 1.5cm;
+    height: 1.5cm;
+  }
+  .author-box > .author-name{
+   
+  }
+.main > .heading{
+    /* background-color: aquamarine; */
+    padding: 0 0rem;
+    margin-top: 4rem;
+    font-size: x-large;
+  }
+  .main > .para1,
+  .main > .para2,
+  .main > .para3,
+  .main > .para4,
+  .main > .para5{
+    padding-left: 0rem;
+    width: 100%;
+    font-size: 1.1rem;
+    padding-top: 2vh;
+  }
 
 }

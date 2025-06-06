@@ -141,52 +141,49 @@ bottom: 4vh;
 
 /* foooteer */
 
-#footer {
+/* footer */
+.footer {
     /* width: 100%; */
   /* padding: 40px 20px; */
-  background-color: #f5f5f5;
+  background-color:#f5f5f5;
   position: relative;
   top: 1.1vh;
-  
   
 }
 .footer-top{
     width: 100%;
     /* margin: 110px; */
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
     padding-top: 5vh;
     margin-top: 15vh;
+    /* background-color: aqua; */
 }
 
-.logo {
-  font-size: 32px;
-  padding-left: 75vh;
-  position: relative;
-  top: 15vh;
-  /* font-weight: bold; */
-  font-family: "Arial Black", sans-serif;
- 
 
 
 
-  /* margin-bottom: 20px; */
-  color: rgb(23, 15, 15);
+ .logo {
+  font-size: 42px;
+  font-weight: bold;
+  font-family: 'Englebert', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15vh;
 }
 
-/* .social-icons {
-  margin-top: 10px;
-  color: rgb(255, 136, 0);
-} */
-.social-icons{
-  display: flex;           
-  align-items: center;  
-     
-  gap: 15px;              
-  margin-top: 29px;        
-  margin-left: 83vh;
-  position: relative;
-  top: 10vh;
 
+
+
+
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10vh;
 }
 
 .icon{
@@ -222,17 +219,7 @@ bottom: 4vh;
   }
 
 
-  /* .footer-links{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 28vh;
-    
-
-    color: black;
-    
-
-
-  } */
+ 
    .footer-links,
 .footer-links-small,
 .copyright {
@@ -268,6 +255,7 @@ bottom: 4vh;
   font-size: 16px;
   color: #e6c2c2;
 }
+
 
 /* button */
 
@@ -324,4 +312,47 @@ bottom: 4vh;
   left: 120px;
 }
 
+/* media quiries */
+@media (max-width: 640px) {
+   .navbar{
+    /* background-color: black; */
+  } 
+  
+  .navbar__brand{
+    /* background-color: red; */
+    margin-left: 3rem;
+  }
+  .author-box{
+    margin-left:auto ;
+    margin-right: 1rem;
+  }
+  .main > .heading{
+    /* background-color: aquamarine; */
+    padding: 0 0rem;
+    margin-top: 3rem;
+  }
+ .main > .img1{
+  width: 65%;
+    padding-left: 0rem;
+    position: relative;
+    bottom: 0vh;
+   
+  }
+  .main > .para1,
+  .main > .para2,
+  .main > .para3,
+  .main > .para4,
+  .main > .para5{
+    padding-left: 0rem;
+    width: 100%;
+    font-size: 1.1rem;
+    padding-top: 2vh;
+  }
+  
+  .img2{
+    padding-left: 0rem;
+    position: relative;
+    top: 0vh;
+  }
+}
 
