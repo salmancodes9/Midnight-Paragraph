@@ -19,7 +19,6 @@ body {
   padding: 20px 0;
   padding-bottom: 40px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  /* position: sticky; */
   top: 0;
   z-index: 999;
   
@@ -33,6 +32,8 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+
 
 .navbar__brand {
   font-size: 32px;
@@ -365,9 +366,9 @@ top: 5vh;
   }
 
 }
-@media (max-width: 480px) {
+@media (max-width: 480px) and (min-width: 320px) {
    .navbar__brand{
-    background-color: red;
+    /* background-color: red; */
     margin-left: 5rem;
     font:small;
   }
@@ -401,5 +402,20 @@ top: 5vh;
     font-size: 1.1rem;
     padding-top: 2vh;
   }
+ .navbar {
+  width: 100%;
+  background-color: #f8f8f8; /* or your desired navbar color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.navbar__container {
+  width: 100%;               /* ✅ full width */
+  max-width: 1200px;         /* still keep layout centered on big screens */
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;           /* ✅ allow wrapping on small screens */
+}
 }
