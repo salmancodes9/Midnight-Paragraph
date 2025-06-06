@@ -138,7 +138,8 @@ a{
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
-  padding: 0 1rem; /* optional padding */
+  padding: 0 1rem; 
+  /* margin-top: -20px; */
 }
 
 
@@ -155,23 +156,28 @@ a{
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  /* margin-top: -20px; */
 }
 
-/* .author_avatar_container{
-  org
+.author_avatar_container{
+  
     height: 2.5rem;
     width: 2.5rem;
     overflow: hidden;
     border: 1px solid rgb(150, 147, 147);
     border-radius: 50%;
     background-color: rgb(243, 239, 239);
-} */
- .aithor_avatar_container {
+    margin-top: -20px;
+    
+   
+   
+}
+ /* .aithor_avatar_container {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   
-}
+} */
 
 /* .author_info_container{
   org
@@ -184,6 +190,7 @@ a{
   flex-direction: column;
   font-size: 0.85rem;
   line-height: 1.2;
+  margin-top: -20px;
 }
 
 .author_name{
@@ -198,7 +205,8 @@ a{
 
 
 
-.card_tag_container {
+/* .card_tag_container {
+  org
   font-size: 0.69rem;
   border: 1px solid rgb(76, 71, 71);
   border-radius: 4px;
@@ -209,11 +217,20 @@ a{
   background-color: #fff; 
   max-width: 100%;
   box-sizing: border-box;
-  /* font-size: 10px; */
-  /* background-color: #e6c2c2; */
-  
-}
 
+  
+} */
+
+
+.card_tag_container span {
+  background-color: #e6f0ff;
+  color: #003366;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  margin-top: -20px;
+}
 /* fooooooter */
 
 .footer {
@@ -356,7 +373,7 @@ a{
   }
  }
 
-}
+
 
 
 @media (max-width: 768px)  and (min-width: 641px)  {
