@@ -326,7 +326,7 @@ top: 5vh;
 @media (max-width: 1024px) and (min-width: 641px) {
   .navbar__brand{
     /* background-color: red; */
-    margin-left: 3rem;
+    margin-left: 6rem;
   }
   .main{
     padding: 5rem;
