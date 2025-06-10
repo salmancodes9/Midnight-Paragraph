@@ -78,12 +78,13 @@
 }
 
 
-.image1 {
+.image1 { 
   flex: 1;
+  width: 100%;
   max-width: 400px;
-  height: 290px;
+  height: auto; /* Adjusts image height automatically */
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   
 }
 .para2{
@@ -170,49 +171,48 @@ padding: 10vh 20vh;
 
 /* foooteer */
 
-#footer {
+.footer {
     /* width: 100%; */
   /* padding: 40px 20px; */
   background-color:#f5f5f5;
   position: relative;
   top: 1.1vh;
   
-  
 }
 .footer-top{
     width: 100%;
     /* margin: 110px; */
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
     padding-top: 5vh;
     margin-top: 15vh;
-}
-
-.logo {
-  font-size: 32px;
-  padding-left: 75vh;
-  position: relative;
-  top: 15vh;
-  /* font-weight: bold; */
-  font-family: "Arial Black", sans-serif;
- 
-
-
-
-  /* margin-bottom: 20px; */
-  color: rgb(23, 15, 15);
+    /* background-color: aqua; */
 }
 
 
-.social-icons{
-  display: flex;           
-  align-items: center;  
-     
-  gap: 15px;              
-  margin-top: 29px;        
-  margin-left: 83vh;
-  position: relative;
-  top: 10vh;
 
+
+ .logo {
+  font-size: 42px;
+  font-weight: bold;
+  font-family: 'Englebert', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15vh;
+}
+
+
+
+
+
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10vh;
 }
 
 .icon{
@@ -248,7 +248,7 @@ padding: 10vh 20vh;
   }
 
 
-  
+ 
    .footer-links,
 .footer-links-small,
 .copyright {
@@ -285,6 +285,49 @@ padding: 10vh 20vh;
   color: #e6c2c2;
 }
 
+
+
+/* media quiries */
+
+@media screen and (max-width: 768px) {
+  .navbar__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar__brand {
+    margin-bottom: 20px;
+    right: 0;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .para1{
+    /* padding: 7rem; */
+    /* background-color: black; */
+  }
+
+
+
+  .para1, .image1, .para2 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .card_grid {
+    grid-template-columns: repeat(1, 1fr); /* Single column on small screens */
+    padding: 10vh 5vh; /* Adjust padding for smaller screens */
+  }
+  
+}
 
 
 
