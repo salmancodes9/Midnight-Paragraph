@@ -65,8 +65,11 @@
   color: #333;
   /* background-color: aqua; */
   border-radius: 12px;
-  position: relative;
-  right: 10vh;
+  /* position: relative;
+  right: 10vh; */
+  padding: 0 10px;
+  position: static;
+  
 } 
 .span{
   font-size: 40px;            /* Make the first word bigger */
@@ -89,13 +92,10 @@
 }
 .para2{
   max-width: 1200px;
-   /* flex: 2; */
   font-size: 2.5vh;
-  /* line-height: 1.2; */
   color: #333;
-  /* background-color: aqua; */
   border-radius: 12px;
-  padding-left: 28vh;
+  padding-left: 20%;
   margin-top: 3vh;
 
 }
@@ -288,6 +288,70 @@ padding: 10vh 20vh;
 
 
 /* media quiries */
+@media screen and (max-width: 1024px) {
+  .navbar__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar__brand {
+    margin-bottom: 20px;
+    right: 0;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .para1, .image1, .para2 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .card_grid {
+    grid-template-columns: repeat(1, 1fr); /* Single column on small screens */
+    padding: 10vh 5vh; /* Adjust padding for smaller screens */
+  }
+  
+}
+@media screen and (max-width: 640px) {
+  .navbar__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar__brand {
+    margin-bottom: 20px;
+    right: 0;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .para1, .image1, .para2 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .card_grid {
+    grid-template-columns: repeat(1, 1fr); /* Single column on small screens */
+    padding: 10vh 5vh; /* Adjust padding for smaller screens */
+  }
+  
+}
 
 @media screen and (max-width: 768px) {
   .navbar__container {
@@ -309,11 +373,15 @@ padding: 10vh 20vh;
     /* padding: 7rem; */
     /* background-color: black; */
   }
+  .para2{
+    padding:0 12px
+  }
 
 
 
-  .para1, .image1, .para2 {
+  .para1, .image1,  {
     max-width: 100%;
+  
     text-align: center;
   }
 
