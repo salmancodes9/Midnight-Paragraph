@@ -336,7 +336,7 @@ padding: 10vh 20vh;
     align-items: center;
   }
 
-  .para1, .image1, .para2 {
+  .para1, .image1,  .para2 {
     max-width: 100%;
     text-align: center;
   }
@@ -379,10 +379,10 @@ padding: 10vh 20vh;
 
 
 
-  .para1, .image1,  {
+  .para1, .image1  {
     max-width: 100%;
   
-    text-align: center;
+    text-align :center;
   }
 
   .image1 {
