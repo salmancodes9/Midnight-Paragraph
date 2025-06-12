@@ -205,23 +205,6 @@ a{
 
 
 
-/* .card_tag_container {
-  org
-  font-size: 0.69rem;
-  border: 1px solid rgb(76, 71, 71);
-  border-radius: 4px;
-  line-height: 1.3rem;
-  padding: 0.5rem 0.3rem; 
-  color: grey;
-  display: flex;
-  background-color: #fff; 
-  max-width: 100%;
-  box-sizing: border-box;
-
-  
-} */
-
-
 .card_tag_container span {
   background-color: #e6f0ff;
   color: #003366;
@@ -355,7 +338,10 @@ a{
 /* media quaries */
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 769px) {
+     .card_tag_container{
+    display: none;
+  }
   .main_container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -377,6 +363,8 @@ a{
 
 
 @media (max-width: 768px)  and (min-width: 641px)  {
+ 
+  
   .main_container{
       grid-template-columns: repeat(2, 1fr);   
   }
