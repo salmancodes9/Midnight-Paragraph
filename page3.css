@@ -40,8 +40,8 @@ body {
    font-family: 'Englebert', sans-serif;
   
   letter-spacing: 1px;
-  position: relative;
-  right: 10vh;
+  /* position: relative;
+  right: 10vh; */
   
   /* background-color: aquamarine; */
   
@@ -130,54 +130,48 @@ margin-top: 7vh;
 
 
 /* * fooooooter */ */
-
-#footer{
+.footer {
     /* width: 100%; */
   /* padding: 40px 20px; */
-  background-color:#c61717;
+  background-color:#f5f5f5;
   position: relative;
   top: 1.1vh;
-  
   
 }
 .footer-top{
     width: 100%;
     /* margin: 110px; */
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
     padding-top: 5vh;
     margin-top: 15vh;
-    /* background-color: #222; */
+    /* background-color: aqua; */
 }
 
-.logo {
-  font-size: 32px;
-  padding-left: 81.5vh;
-  position: relative;
-  top: 15vh;
+
+
+
+ .logo {
+  font-size: 42px;
   font-weight: bold;
- 
-   font-family: 'Englebert', sans-serif;
- 
-
-
-
-  
+  font-family: 'Englebert', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15vh;
 }
 
-/* .social-icons {
-  margin-top: 10px;
-  color: rgb(255, 136, 0);
-} */
-.social-icons{
-  display: flex;           
-  align-items: center;  
-     
-  gap: 15px;              
-  margin-top: 29px;        
-  margin-left: 83vh;
-  position: relative;
-  top: 10vh;
 
+
+
+
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10vh;
 }
 
 .icon{
@@ -213,17 +207,7 @@ margin-top: 7vh;
   }
 
 
-  /* .footer-links{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 28vh;
-    
-
-    color: black;
-    
-
-
-  } */
+ 
    .footer-links,
 .footer-links-small,
 .copyright {
@@ -260,8 +244,7 @@ margin-top: 7vh;
   color: #e6c2c2;
 }
 
-/* button */
-/* button of author*/
+
 /* Author box styles */
 .author-box {
   /* position: relative; */
@@ -271,20 +254,8 @@ margin-top: 7vh;
   width: 3cm;
   height: 4cm;
   margin-top: 10px;
-  
-  /* margin:  ;  */
+
   padding: 1rem;
-  /* border: 1px solid #ddd; */
-  /* border-radius: 8px; */
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end; */
-  
-  
-  
-  
 }
 
 .author-pic {
@@ -310,3 +281,138 @@ margin-top: 7vh;
 }
 
 
+/* --------- Media Queries --------- */
+
+/* Small screens: Mobile phones */
+@media screen and (max-width: 600px) {
+  .navbar__container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
+  .navbar__brand {
+    font-size: 24px;
+  }
+
+  .navbar__links a {
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .heading {
+    font-size: 4vh;
+    padding: 5vh 5vw;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .para1,
+  .para2 {
+    width: 90%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 1rem;
+  }
+
+  .img1 {
+    width: 90%;
+    padding-left: 5vw;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .author-box {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .footer-top {
+    padding-top: 3vh;
+  }
+
+  .logo {
+    font-size: 28px;
+    padding-top: 5vh;
+  }
+
+  .social-icons {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .footer-links,
+  .footer-links-small,
+  .copyright {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+/* Medium screens: Tablets */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  .navbar__container {
+    padding: 0 30px;
+  }
+
+  .navbar__brand {
+    font-size: 28px;
+  }
+
+  .navbar__links a {
+    font-size: 1.3rem;
+    margin-left: 15px;
+  }
+
+  .heading {
+    font-size: 5vh;
+    padding: 6vh 10vw;
+  }
+
+  .para1,
+  .para2 {
+    width: 85%;
+    padding-left: 10vw;
+    font-size: 1.1rem;
+  }
+
+  .img1 {
+    width: 85%;
+    padding-left: 10vw;
+  }
+
+  .author-box {
+    margin: 10px auto 20px auto;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 36px;
+  }
+
+  .footer-links,
+  .footer-links-small {
+    font-size: 16px;
+  }
+}
+
+/* Large screens: Desktops */
+@media screen and (min-width: 993px) {
+  .navbar__brand {
+    font-size: 32px;
+  }
+
+  .heading {
+    font-size: 6vh;
+  }
+
+  .para1,
+  .para2 {
+    font-size: 1.2rem;
+  }
+
+  .img1 {
+    width: 65%;
+  }
+}

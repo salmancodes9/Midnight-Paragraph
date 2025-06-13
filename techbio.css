@@ -60,13 +60,11 @@
 
 .para1 {
   flex: 2;
+  
   font-size: 2.5vh;
   line-height: 1.2;
   color: #333;
-  /* background-color: aqua; */
   border-radius: 12px;
-  /* position: relative;
-  right: 10vh; */
   padding: 0 10px;
   position: static;
   
@@ -288,7 +286,7 @@ padding: 10vh 20vh;
 
 
 /* media quiries */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   .navbar__container {
     flex-direction: column;
     align-items: center;
@@ -307,6 +305,7 @@ padding: 10vh 20vh;
   .para1, .image1, .para2 {
     max-width: 100%;
     text-align: center;
+    background:#174ea6
   }
 
   .image1 {
@@ -370,8 +369,7 @@ padding: 10vh 20vh;
    
   }
   .para1{
-    /* padding: 7rem; */
-    /* background-color: black; */
+    padding:0 12px
   }
   .para2{
     padding:0 12px
